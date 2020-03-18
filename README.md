@@ -2,8 +2,8 @@
 * bouzu
 * githubの使い方ー！
 
-コマンドプロンプトにいって任意のカレントディレクトリを作る。
-例) CD Desktop
+/コマンドプロンプトにいって任意のカレントディレクトリを作る。
+/例) CD Desktop
 上の場合デスクトップを指定している
 次に
 git clone https://github.com/Fertilizer-Toin/MeshiTest.git
