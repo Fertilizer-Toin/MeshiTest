@@ -12,7 +12,7 @@ git clone https://github.com/Fertilizer-Toin/MeshiTest.git
 
 このコマンドを打つ。 
 
-するとカレントディレクトリに指定したファイルの中にMeshiTestというファイルができる。  
+するとカレントディレクトリに指定したファイルの中にMeshiTestというフォルダができる。  
 
 そこをカレントディレクトリとする  
 
@@ -32,7 +32,7 @@ git add 操作したファイル名 (変更したファイルを一発で全部�
 
 これをうって 
 
-git commit -m "任意のコメント" 
+git commit -m "任意のコメント" (あとからみてなにしたかがわかるコメントをよろしく)
 
 これうって 
 
@@ -41,3 +41,5 @@ git push origin master
 これうつ 
 
 終わり。 
+
+ProgateのGit講座をやってもいいかもしれない。
