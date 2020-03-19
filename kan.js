@@ -65,6 +65,6 @@
             self.get(x, y + size),     
             self.get(x - size, y)       
           ]);
-          self.set(x, y, ave + offset);
+          self.set(x, y, ave + offset);//てきとーにいじる
         }
       };
