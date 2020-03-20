@@ -2,4 +2,8 @@ body{
     background:#ffffff;
     font-family: Meiryo
 }
-konnakannjideyatteikunokana?
+canvas{
+    font-size: 40px;
+    background: #ffffff;
+    color: #00008B;
+}
