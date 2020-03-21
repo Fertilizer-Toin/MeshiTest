@@ -3,7 +3,8 @@ from django.db import models
 class choices(models.Model):
     foods_id = models.IntegerField(primary_key=True)
     food_name = models.CharField('食材の名前',max_length=40)
-    texture = models.IntegerField('食感')
+    taste = models.IntegerField('味')
+    texture = models.CharField('食感',max_length=255)
     Allergy = models.IntegerField('アレルギー物質')
     temperature = models.IntegerField('温度')
     Halal = models.BooleanField('ハラル') #ハラルだったらTrue,ハラルじゃなかったらfalse
