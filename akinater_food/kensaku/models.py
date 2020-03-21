@@ -17,3 +17,5 @@ class choices(models.Model):
     major_or_minor  = models.BooleanField('有名かどうか')
     difficulty  = models.IntegerField('難度')
     rice_or_bread = models.IntegerField('パンかご飯かそれいがいか',default=0)
+    def __str__(self):
+        return self.food_name
