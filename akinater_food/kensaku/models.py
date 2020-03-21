@@ -4,6 +4,7 @@ class choices(models.Model):
     foods_id = models.IntegerField(primary_key=True)
     food_name = models.CharField('食材の名前',max_length=40)
     taste = models.IntegerField('味')
+    group = models.CharField('ジャンル',max_length=25)
     texture = models.CharField('食感',max_length=255)
     Allergy = models.IntegerField('アレルギー物質')
     temperature = models.IntegerField('温度')
