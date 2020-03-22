@@ -6,7 +6,7 @@ class choices(models.Model):
     taste = models.IntegerField('味')
     group = models.CharField('ジャンル',max_length=25)
     texture = models.CharField('食感',max_length=255)
-    Allergy = models.IntegerField('アレルギー物質')
+    Allergy = models.CharField('アレルギー物質',max_length=50)
     temperature = models.IntegerField('温度')
     Halal = models.BooleanField('ハラル') #ハラルだったらTrue,ハラルじゃなかったらfalse
     volume = models.IntegerField('腹持ちの良さ')
