@@ -52,6 +52,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'akinater_food.urls'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

@@ -6,3 +6,10 @@ def index_template(request):
       'app': 'Django',
       }
     return render(request,'index.html',myapp_data)
+def questions(request):
+    questions_data = {'questions':[],}
+    return render(request,'question.html',questions_data)
+def answer(request):
+    if request.method == 'PODT':
+        
+    
