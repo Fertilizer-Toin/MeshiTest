@@ -1,7 +1,17 @@
 .answer{
     display: list-item;
     margin: 30px 0 30px 30px;
-    font-size: 36px;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: orangered;
+    width: 300px;
     border-radius: 15px;
-    background-color: palegreen;
+    background-color: white;
+    /* transition: .3s; */
+}
+
+.answer:hover{
+    color: white;
+    background-color: orangered;
 }
