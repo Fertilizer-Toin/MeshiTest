@@ -1,0 +1,7 @@
+.answer{
+    display: list-item;
+    margin: 30px 0 30px 30px;
+    font-size: 36px;
+    border-radius: 15px;
+    background-color: palegreen;
+}
