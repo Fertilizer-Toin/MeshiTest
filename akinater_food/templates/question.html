@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="{% static 'buttonstyle.css' %}">
     <title>ボタン</title>
 </head>
-
-    <form action="{% url 'akinate_food.views.answer'%}" method="POST">
+<body>
+    <form action="{% url 'akinate_food.views.answer1'%}" method="POST">
         {% csrf_token %}
-        <button type="submit" class="answer" id="one">のぐちりょうた</button>
-        <button type="submit" class="answer" id="two">遊牧民</button>
-        <button type="submit" class="answer" id="three">モンゴブリン</button>
-        <button type="submit" class="answer" id="four">ダンブルドア</button>
+        <p>{{question[0]}}</p>
+        <input type="submit" class="answer" id="one">{{question[1]}</button>
+        <input type="submit" class="answer" id="two">{{question[4]}</button>
+        <input type="submit" class="answer" id="three">{{question[7]}</button>
+        <input type="submit" class="answer" id="four">{{question[10]}</button>
     </form>
-    
+</body>
 {% endblock %}
 </html>
