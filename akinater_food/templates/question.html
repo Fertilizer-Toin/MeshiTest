@@ -11,13 +11,13 @@
     <title>ボタン</title>
 </head>
 <body>
-    <form action="{% url 'akinate_food.views.answer1'%}" method="POST">
+    <p>{{question}}</p>
+    <form action="{% url 'ans:answer1'%}" method="post">
         {% csrf_token %}
-        <p>{{question[0]}}</p>
-        <input type="submit" class="answer" id="one">{{question[1]}</button>
-        <input type="submit" class="answer" id="two">{{question[4]}</button>
-        <input type="submit" class="answer" id="three">{{question[7]}</button>
-        <input type="submit" class="answer" id="four">{{question[10]}</button>
+        <input type="submit" class="answer" value="{{choice_1}}" id="one"></button>
+        <input type="submit" class="answer" value="{{choice_2}}" id="two"></button>
+        <input type="submit" class="answer" value={{choice_3}} id="three"></button>
+        <input type="submit" class="answer" value={{choice_4}} id="four"></button>
     </form>
 </body>
 {% endblock %}
