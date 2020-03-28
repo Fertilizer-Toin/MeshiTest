@@ -2,10 +2,14 @@ from django.shortcuts import render
 from django.db import connection
 from .models import choices,questions
 import random
+from django.contrib.auth.models import (
+    BaseUserManager, AbstractBaseUser
+)
 # Create your views here.
 kuji = random.randint(1,1)
 question = questions.objects.get(pk=kuji)
 def index_template(request):
+
     myapp_data = {
         'app':'Django'
     }
@@ -27,9 +31,9 @@ def Questions(request):
         'answer4_get_ans':question.answer4_get_ans,
 
     }
-    return render(request,'question.html',q)
+    return render(request,'question.html',q)    
+#アンサーをゲット
 def answer1(request):
-    answer = []
     if request.method == 'POST':
         if 'one' in request.POST:
             answer[2]+=question[kuji][3]
@@ -39,3 +43,4 @@ def answer1(request):
             answer[8]+=question[kuji][3]
         elif 'four' in request.POST:
             answer[9]+=question[kuji][3]
+
