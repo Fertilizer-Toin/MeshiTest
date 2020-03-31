@@ -130,6 +130,7 @@ body{
   font-size: 0.75em;
   margin: 0;
   padding: 0;
+  froat: right;
 }
 .form-footer a:hover {
   color: EF8C00;
