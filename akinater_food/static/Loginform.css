@@ -121,7 +121,7 @@ body{
 .log-form .btn:focus {
   outline: none;
 }
-.log-form .forgot {
+.form-footer a{
   color: orangered;
   line-height: 0.5em;
   position: relative;
@@ -130,9 +130,8 @@ body{
   font-size: 0.75em;
   margin: 0;
   padding: 0;
-  float: right;
 }
-.log-form .forgot:hover {
+.form-footer a:hover {
   color: EF8C00;
 }
 
